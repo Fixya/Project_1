@@ -7,6 +7,11 @@ void charDescr(sf::RectangleShape& figure, const sf::Color Color, const sf::Vect
 	figure.setFillColor(Color);
 	figure.setPosition(Position);
 }
+void charDescr2(sf::RectangleShape& figure, const sf::Color Color)
+{
+	figure.setSize(figureSize);
+	figure.setFillColor(Color);
+}
 void initBall(sf::CircleShape& ball, const sf::Color ballColor)
 {
 	ball.setRadius(ballRadius);
@@ -17,5 +22,4 @@ void PText(sf::Text& PText, sf::Font& font, const sf::Vector2f textPosition)
 	PText.setFont(font);
 	PText.setCharacterSize(30);
 	PText.setPosition(textPosition);
-
 }
